@@ -6,7 +6,9 @@ https://is.gd/Alubendiscord
 
 ##
 
-<img src="assets/images/Aluben-logo.jpeg"></img>
+![traf](./assets/images/logo.jpeg)
+<br><br>
+<br>
 how to use:
 
 type your URL with https / http in search box then click load load url.it will open the page there are 4 proxy's nebula, aluben, procky list, and abyss you can use these to unblock.
