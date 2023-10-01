@@ -64,6 +64,8 @@ iframe {
 img {
   height: 100px;
   color: #001191;
+  position: relative;
+  top: -5px;
 }
 #txt {
   font-size: 23px;
