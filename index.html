@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="Proxy,Epic,Unblocker,Unblocked Games, School Unblocker,Unblocked,Kazwire" />
   <meta name="description"
-    content="A good proxy with a custom unblocker and a proxy list bulit in games it's amazing" />
+    content="A good proxy with a  custom unblocker and a proxy list bulit in games it's amazing" />
   <title>Aluben</title>
   <meta charset="UTF-8" />
   <link href="style.css" rel="stylesheet" type="text/css" />
@@ -30,6 +30,16 @@
   </button><button class="button" type="button" onclick="proxylist()">
     Procky list
   </button>
+        <button id="show1" type="button" onclick="pass2()">
+    Aluben tab options 2
+  </button>
+   <button id="show" type="button" onclick="pass1()">
+    Aluben tab options 1
+  </button>
+        <script>
+          $("#show").hide();
+          $("#show1").hide();
+        </script>
       </div>
   <div id="traf-say"><a href="./Fart.html"><span class="stinky">traf</span></a></div>
   <style>
@@ -66,6 +76,8 @@
 
     function hideCustomAlert() {
       $("#myCustomAlert").hide();
+      $("#show").show();
+      $("#show1").show();
     }
     function passcodechange() {
       var oldpasscode = prompt("enter old passcode");
