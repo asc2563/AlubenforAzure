@@ -43,61 +43,6 @@ function discord() {
 
 //var passcode = prompt("Welcome to aluben, set your passcode");
 
-function tabname() {
-  function gcloak() {
-    var link =
-      document.querySelector("link[rel*='icon']") ||
-      document.createElement("link");
-    link.type = "image/x-icon";
-    link.rel = "shortcut icon";
-    link.href = " https://assets.clever.com/launchpad/c4a9bd82e/favicon.ico?1";
-    document.title = "Clever | Portal";
-    console.log(document.title);
-    document.getElementsByTagName("head")[0].appendChild(link);
-  }
-  gcloak();
-  setInterval(gcloak, 1000);
-  function gcloak() {
-    var link =
-      document.querySelector("link[rel*='icon']") ||
-      document.createElement("link");
-    link.type = "image/x-icon";
-    link.rel = "shortcut icon";
-    link.href = " https://assets.clever.com/launchpad/c4a9bd82e/favicon.ico?1";
-    document.title = "Clever | Portal";
-    console.log(document.title);
-    document.getElementsByTagName("head")[0].appendChild(link);
-  }
-  gcloak();
-  setInterval(gcloak, 1000);
-  function gcloak() {
-    var link =
-      document.querySelector("link[rel*='icon']") ||
-      document.createElement("link");
-    link.type = "image/x-icon";
-    link.rel = "shortcut icon";
-    link.href = " https://assets.clever.com/launchpad/c4a9bd82e/favicon.ico?1";
-    document.title = "Clever | Portal";
-    console.log(document.title);
-    document.getElementsByTagName("head")[0].appendChild(link);
-  }
-  gcloak();
-  setInterval(gcloak, 1000);
-  function gcloak() {
-    var link =
-      document.querySelector("link[rel*='icon']") ||
-      document.createElement("link");
-    link.type = "image/x-icon";
-    link.rel = "shortcut icon";
-    link.href = " https://assets.clever.com/launchpad/c4a9bd82e/favicon.ico?1";
-    document.title = "Clever | Portal";
-    console.log(document.title);
-    document.getElementsByTagName("head")[0].appendChild(link);
-  }
-  gcloak();
-  setInterval(gcloak, 1000);
-}
-
 function pass1() {
   var passwordAttempt = prompt("enter password");
   if (passwordAttempt == passcode) {
