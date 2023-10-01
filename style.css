@@ -101,3 +101,12 @@ select {
   color: red;
   text-decoration: none;
 }
+.sidebar {
+  color: rgb(255, 255, 255);
+  background-color: rgb(36, 36, 36);
+  text-align: center;
+  left: 0%;
+  position: fixed;
+  width: 100%;
+  top: 10px;
+}
