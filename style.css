@@ -121,3 +121,27 @@ select {
   width: 100%;
   top: 40px;
 }
+#remove {
+  position: absolute;
+  right: 140px;
+}
+.subtitle {
+  font-size: 29px;
+}
+#closeset {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+#closesetbutton {
+  background-color: #3d3d3d;
+  text-align: center;
+  border: 0px solid;
+  padding: 10px 20px;
+}
+#closesetbutton:hover {
+  background-color: #3d3d3d;
+  text-align: center;
+  border: 0px solid #3d3d3d;
+  padding: 10px 20px;
+}

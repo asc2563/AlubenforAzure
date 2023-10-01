@@ -37,7 +37,7 @@
     Aluben tab options 1
   </button>
         <button type="button" onclick="cust()">
-          customize 
+          settings 
         </button>
         <script>
           $("#show").hide();
@@ -55,6 +55,9 @@
     }
   </script>
   <div id = "cust">
+    <div id = "closeset">
+      <button id = "closesetbutton" onclick="remove()"><strong>x</strong></button>
+    </div>
     <script>
       function remove() {
         $("#cust").hide();
@@ -76,13 +79,107 @@
         document.body.style.color = "#e41b1c";
       }
     </script>
+    <h1>themes:</h1>
     <button onclick="back()">dark</button>
     <button onclick="white()">white</button>
     <button onclick="blue()">ocean</button>
     <button onclick="twi()">twilight</button>
     <button onclick="rand()">Hephaestus</button>
     <button onclick="sun()">sunlight</button>
-    <button onclick="remove()">X</button>
+    <button onclick="customtheme()">custom</button>
+    <h2>tab cloak(click a few times)</h2>
+    <script>
+      var tabrename;
+      var tabrenamechange;
+      var tabicon
+      var tabiconchange
+      function customtheme() {
+        var backcolor = prompt('type hex value for background color');
+        var textcolor = prompt('type hex value for text color');
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = textcolor;
+      }
+    </script>
+    <button onclick="clevercloak()">clever</button>
+    <button onclick="googleclassroomcloak()">google classroom</button>
+    <br>
+    <span class = "subtitle">custom:</span>
+    <br>
+    <input type="text" onchange="tabrename = this.value;" placeholder="enter new tab name">
+    <button onclick="nowstrt()">set</button>
+    <br><br>
+    <h3>About:blank no history cloak</h3>
+    <button onclick="aboutblank()">about:blank cloak Aluben</button>
+    <button onclick="aboutblank2()">about:blank cloak other websites</button>
+    <script>
+      function aboutblank() {
+        win = window.open();
+        url = "https://proud-desert-00869381e.3.azurestaticapps.net/";
+        iframe = win.document.createElement("iframe");
+        iframe.style =
+          "position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;";
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+      }
+      function aboutblank2() {
+        (function () {
+    var url = prompt("Enter website url for cloaked page");
+    var win = window.open();
+    var iframe = win.document.createElement("iframe");
+    iframe.style =
+      "position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;";
+    if (url.includes("https://") || url.includes("http://")) {
+      iframe.src = url;
+    } else {
+      iframe.src = "https://" + url;
+    }
+    win.document.body.appendChild(iframe);
+  })();
+      }
+    </script>
+    <script>
+      function googleclassroomcloak() {
+        function gcloak() {
+    var link =
+      document.querySelector("link[rel*='icon']") ||
+      document.createElement("link");
+    link.type = "image/x-icon";
+    link.rel = "shortcut icon";
+    link.href = " https://ssl.gstatic.com/classroom/ic_product_classroom_32.png";
+    document.title = "Home";
+    console.log(document.title);
+    document.getElementsByTagName("head")[0].appendChild(link);
+  }
+  gcloak();
+  setInterval(gcloak, 1000);
+      }
+      function clevercloak() {
+        function gcloak() {
+    var link =
+      document.querySelector("link[rel*='icon']") ||
+      document.createElement("link");
+    link.type = "image/x-icon";
+    link.rel = "shortcut icon";
+    link.href = " https://assets.clever.com/launchpad/c4a9bd82e/favicon.ico?1";
+    document.title = "Clever | Portal";
+    console.log(document.title);
+    document.getElementsByTagName("head")[0].appendChild(link);
+  }
+  gcloak();
+  setInterval(gcloak, 1000);
+      }
+      function nowstrt() {
+        tabrenamechange = tabrename;
+        tabicon = tabiconchange
+        function gcloak() {
+  document.title = tabrenamechange;
+  console.log(document.title);
+  document.getElementsByTagName("head")[0].appendChild(link);
+}
+gcloak();
+setInterval(gcloak, 1000);
+      }
+    </script>
     <script>
       $("#cust").hide();
       function cust() {
