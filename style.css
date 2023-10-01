@@ -1,7 +1,7 @@
 html {
   width: 100%;
   height: 100%;
-  background-color: #080a0b;
+  background-color: black;
   color: floralwhite;
   text-align: center;
 }
@@ -9,14 +9,14 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #080a0b;
+  background-color: black;
   text-align: center;
 }
 
 head {
   width: 100%;
   height: 100%;
-  background-color: #080a0b;
+  background-color: black;
   text-align: center;
 }
 

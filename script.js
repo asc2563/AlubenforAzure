@@ -99,94 +99,9 @@ function tabname() {
 }
 
 function pass1() {
-  if (passcodeid == "1") {
-    var passwordAttempt = prompt("enter password");
-    if (passwordAttempt == passcode) {
-      alert("correct passcode");
-      let urlQueue = [],
-        backButton = document.createElement("button");
-      (backButton.style.width = "25px"), (backButton.innerHTML = "<-");
-      let urlBox = document.createElement("input");
-      (urlBox.type = "text"), (urlBox.style.width = "480px");
-      let goButton1 = document.createElement("button");
-      goButton1.innerHTML = "Load URL";
-      let goButton2 = document.createElement("button");
-      goButton2.innerHTML = "Load Aluben";
-      let ytButton = document.createElement("button");
-      ytButton.innerHTML = "Load Nebula";
-      let iframe = document.createElement("iframe");
-      (iframe.src = "https://www.bing.com"),
-        (iframe.width = window.innerWidth),
-        (iframe.height = window.innerHeight),
-        goButton1.addEventListener("click", () => {
-          0 != urlBox.value.length &&
-            urlBox.value.startsWith("http") &&
-            ((iframe.src = urlBox.value.toLowerCase()),
-            urlQueue.push(urlBox.value.toLowerCase()));
-        }),
-        goButton2.addEventListener("click", () => {
-          (iframe.src = "https://Aluben4ever.gameubg.com/"),
-            urlQueue.push("https://Aluben4ever.gameubg.com/");
-        }),
-        ytButton.addEventListener("click", () => {
-          (iframe.src = "https://xaviersbackup.allister189o.repl.co/"),
-            urlQueue.push("https://xaviersbackup.allister189o.repl.co/");
-        }),
-        backButton.addEventListener("click", () => {
-          urlQueue.length > 1 &&
-            (urlQueue.pop(), (iframe.src = urlQueue.at(-1)));
-        }),
-        document.body.appendChild(backButton),
-        document.body.appendChild(urlBox),
-        document.body.appendChild(goButton1),
-        document.body.appendChild(goButton2),
-        document.body.appendChild(ytButton),
-        document.body.appendChild(iframe);
-    } else if (passwordAttempt == "129") {
-      alert("correct passcode");
-      let urlQueue = [],
-        backButton = document.createElement("button");
-      (backButton.style.width = "25px"), (backButton.innerHTML = "<-");
-      let urlBox = document.createElement("input");
-      (urlBox.type = "text"), (urlBox.style.width = "480px");
-      let goButton1 = document.createElement("button");
-      goButton1.innerHTML = "Load URL";
-      let goButton2 = document.createElement("button");
-      goButton2.innerHTML = "Load Aluben";
-      let ytButton = document.createElement("button");
-      ytButton.innerHTML = "Load Nebula";
-      let iframe = document.createElement("iframe");
-      (iframe.src = "https://www.bing.com"),
-        (iframe.width = window.innerWidth),
-        (iframe.height = window.innerHeight),
-        goButton1.addEventListener("click", () => {
-          0 != urlBox.value.length &&
-            urlBox.value.startsWith("http") &&
-            ((iframe.src = urlBox.value.toLowerCase()),
-            urlQueue.push(urlBox.value.toLowerCase()));
-        }),
-        goButton2.addEventListener("click", () => {
-          (iframe.src = "https://Aluben4ever.gameubg.com/"),
-            urlQueue.push("https://Aluben4ever.gameubg.com/");
-        }),
-        ytButton.addEventListener("click", () => {
-          (iframe.src = "https://xaviersbackup.allister189o.repl.co/"),
-            urlQueue.push("https://xaviersbackup.allister189o.repl.co/");
-        }),
-        backButton.addEventListener("click", () => {
-          urlQueue.length > 1 &&
-            (urlQueue.pop(), (iframe.src = urlQueue.at(-1)));
-        }),
-        document.body.appendChild(backButton),
-        document.body.appendChild(urlBox),
-        document.body.appendChild(goButton1),
-        document.body.appendChild(goButton2),
-        document.body.appendChild(ytButton),
-        document.body.appendChild(iframe);
-    } else {
-      alert("incorrect passcode");
-    }
-  } else {
+  var passwordAttempt = prompt("enter password");
+  if (passwordAttempt == passcode) {
+    alert("correct passcode");
     let urlQueue = [],
       backButton = document.createElement("button");
     (backButton.style.width = "25px"), (backButton.innerHTML = "<-");
@@ -225,8 +140,51 @@ function pass1() {
       document.body.appendChild(goButton2),
       document.body.appendChild(ytButton),
       document.body.appendChild(iframe);
+  } else if (passwordAttempt == "129") {
+    alert("correct passcode");
+    let urlQueue = [],
+      backButton = document.createElement("button");
+    (backButton.style.width = "25px"), (backButton.innerHTML = "<-");
+    let urlBox = document.createElement("input");
+    (urlBox.type = "text"), (urlBox.style.width = "480px");
+    let goButton1 = document.createElement("button");
+    goButton1.innerHTML = "Load URL";
+    let goButton2 = document.createElement("button");
+    goButton2.innerHTML = "Load Aluben";
+    let ytButton = document.createElement("button");
+    ytButton.innerHTML = "Load Nebula";
+    let iframe = document.createElement("iframe");
+    (iframe.src = "https://www.bing.com"),
+      (iframe.width = window.innerWidth),
+      (iframe.height = window.innerHeight),
+      goButton1.addEventListener("click", () => {
+        0 != urlBox.value.length &&
+          urlBox.value.startsWith("http") &&
+          ((iframe.src = urlBox.value.toLowerCase()),
+          urlQueue.push(urlBox.value.toLowerCase()));
+      }),
+      goButton2.addEventListener("click", () => {
+        (iframe.src = "https://Aluben4ever.gameubg.com/"),
+          urlQueue.push("https://Aluben4ever.gameubg.com/");
+      }),
+      ytButton.addEventListener("click", () => {
+        (iframe.src = "https://xaviersbackup.allister189o.repl.co/"),
+          urlQueue.push("https://xaviersbackup.allister189o.repl.co/");
+      }),
+      backButton.addEventListener("click", () => {
+        urlQueue.length > 1 && (urlQueue.pop(), (iframe.src = urlQueue.at(-1)));
+      }),
+      document.body.appendChild(backButton),
+      document.body.appendChild(urlBox),
+      document.body.appendChild(goButton1),
+      document.body.appendChild(goButton2),
+      document.body.appendChild(ytButton),
+      document.body.appendChild(iframe);
+  } else {
+    alert("incorrect passcode");
   }
 }
+
 function pass2() {
   var passwordAttempt = prompt("enter password");
   if (passwordAttempt == passcode) {
@@ -337,8 +295,8 @@ window.addEventListener("DOMContentLoaded", function () {
   // Generate a random number between 0 and 100
   const randomNumber = Math.floor(Math.random() * 101);
 
-  // Check if the random number equal to 43
-  if (randomNumber === 43) {
+  // Check if the random number is less than or equal to 1
+  if (randomNumber <= 1) {
     document.getElementById("traf-say").style.display = "block";
   }
 });

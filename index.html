@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <!--error-->
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="keywords" content="Proxy,Epic,Unblocker,Unblocked Games, School Unblocker,Unblocked,Kazwire" />
@@ -11,27 +10,27 @@
   <meta charset="UTF-8" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
-  <style>
+  <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.6.4/dist/jquery.min.js"></script><style>
     p {
       color: white;
     }
   </style>
   <b><a id="Aluben" href="#"><img src="./assets/images/logo.jpeg" /></a></b>
-  <script src="https://gist.github.com/asc2563/b5601e1347704467a92e49ddc074053d.js"></script>
   <br />
+  <script src="https://gist.github.com/asc2563/b5601e1347704467a92e49ddc074053d.js"></script>
   <br />
 </head>
 
 
 
-<body>
+<body style="background-color: black">
   <div id="traf-say" style="position: absolute; top: 20px">traf</div>
   <style>
     /* Define styles for the custom alert */
     .custom-alert {
       display: center;
       position: fixed;
-      top: 50%;
+      top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: black;
@@ -47,9 +46,7 @@
   </script>
 
   <!-- Custom alert with ID and class -->
-  <div id="myCustomAlert" class="custom-alert" style="
-    position: absolute;
-top: 500px; display: none;">
+  <div id="myCustomAlert" class="custom-alert">
     Welcome to Aluben, Set Passcode<br />
 
     <input type="text" id="hi" onchange="passcode = this.value; console.log(''+ passcode +'')"></input>
@@ -57,19 +54,24 @@ top: 500px; display: none;">
   </div>
   <script>
     function showCustomAlert() {
-      var customAlert = document.getElementById("myCustomAlert");
-      customAlert.style.display = "block";
-      let passcodeid = '1';
-      console.log(passcodeid);
+      $("#myCustomAlert").show();
     }
 
     function hideCustomAlert() {
-      var customAlert = document.getElementById("myCustomAlert");
-      customAlert.style.display = "none";
+      $("#myCustomAlert").hide();
     }
+    function passcodechange() {
+      var oldpasscode = prompt("enter old passcode");
+      if (oldpasscode == passcode) {
+        var newpasscode = prompt('enter new passcode');
+        passcode = newpasscode;
+      } else {
+          alert('incorrect passocde')
+        }
+      }
   </script>
   <br />
-  <button class="button" type="button" onclick="showCustomAlert()">Set Passcode
+  <button onclick="passcodechange()">change passcode
   </button>
   <button class="button" type="button" onclick="Byblk()">luanch Byeblocker
   </button>
@@ -704,7 +706,7 @@ top: 500px; display: none;">
     <option value="https://mathingsite4.5thaurora.com/">link 604</option>
     <option value="https://sciencysite4.4webhelp.ca/">link 605</option>
   </select>
-  <button class="button" onclick="goToWebsite1()">Go</button>
+  <button onclick="goToWebsite1()">Go</button>
 
   <script>
     function goToWebsite1() {
@@ -730,7 +732,7 @@ top: 500px; display: none;">
     <option value="https://televisionrepair.us/">Link 9</option>
     <option value="https://ur2ndlibrary.com/">Link 10</option>
   </select>
-  <button class="button" onclick="goToWebsite3()">Go</button>
+  <button onclick="goToWebsite3()">Go</button>
   <br><br>
   <br>
   <script>
