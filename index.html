@@ -36,11 +36,60 @@
    <button id="show" type="button" onclick="pass1()">
     Aluben tab options 1
   </button>
+        <button type="button" onclick="cust()">
+          customize 
+        </button>
         <script>
           $("#show").hide();
           $("#show1").hide();
         </script>
       </div>
+  <script>
+    function back() {
+  document.body.style.backgroundColor = "#000000"
+  document.body.style.color = "#ffffff";
+    }
+    function white() {
+      document.body.style.backgroundColor = "#ffffff"
+  document.body.style.color = "#000000";
+    }
+  </script>
+  <div id = "cust">
+    <script>
+      function remove() {
+        $("#cust").hide();
+      }
+      function blue() {
+        document.body.style.backgroundColor = "#00008B";
+  document.body.style.color = "#00ffff";
+      }
+      function twi() {
+       document.body.style.backgroundColor = "#26233a";
+        document.body.style.color = "#ffffff";
+      }
+      function rand() {
+        document.body.style.backgroundColor = "#df990d";
+        document.body.style.color = "#ffd6d9";
+      }
+      function sun() {
+        document.body.style.backgroundColor = "#e8e700";
+        document.body.style.color = "#e41b1c";
+      }
+    </script>
+    <button onclick="back()">dark</button>
+    <button onclick="white()">white</button>
+    <button onclick="blue()">ocean</button>
+    <button onclick="twi()">twilight</button>
+    <button onclick="rand()">Hephaestus</button>
+    <button onclick="sun()">sunlight</button>
+    <button onclick="remove()">X</button>
+    <script>
+      $("#cust").hide();
+      function cust() {
+  $("#cust").show();
+}
+    </script>
+  </div>
   <div id="traf-say"><a href="./Fart.html"><span class="stinky">traf</span></a></div>
   <style>
     /* Define styles for the custom alert */
@@ -120,7 +169,12 @@
   <br />
 
   <body id="timer" onload="startTime()">
-    ​
+    ​<style>
+      #txt {
+        color: red;
+        font-weight: bolder;
+      }
+    </style>
     <div id="txt"></div>
     ​
     <script>
@@ -763,7 +817,6 @@
       }
     }
   </script>
-  <script src="https://gist.github.com/asc2563/b5601e1347704467a92e49ddc074053d.js"></script>
 </body>
 
 </html>

@@ -110,3 +110,12 @@ select {
   width: 100%;
   top: 0px;
 }
+#cust {
+  color: rgb(255, 255, 255);
+  background-color: #3d3d3d;
+  text-align: center;
+  left: 0%;
+  position: fixed;
+  width: 100%;
+  top: 40px;
+}
