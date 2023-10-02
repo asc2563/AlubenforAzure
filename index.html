@@ -213,7 +213,7 @@ setInterval(gcloak, 1000);
   <div id="myCustomAlert" class="custom-alert">
     Welcome to Aluben, Set Passcode<br />
 
-    <input placeholder="Enter your password" type="text" id="hi" onchange="passcode = this.value; console.log(''+ passcode +'')"></input>
+    <input placeholder="Enter your password" type="text" id="hi" onchange="passcode = this.value; console.log('you passcode is '+ passcode +'')"></input>
     <button onclick="hideCustomAlert()">Comfirm</button>
   </div>
   <script>
@@ -231,6 +231,7 @@ setInterval(gcloak, 1000);
       if (oldpasscode == passcode) {
         var newpasscode = prompt('enter new passcode');
         passcode = newpasscode;
+        console.log('your password is '+ passcode +'')
       } else {
           alert('incorrect passocde')
         }
