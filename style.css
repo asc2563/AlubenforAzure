@@ -145,3 +145,8 @@ select {
   border: 0px solid #3d3d3d;
   padding: 10px 20px;
 }
+#colorwheel {
+  position: absolute;
+  width: 40vh;
+  height: 45vh;
+}

@@ -236,13 +236,15 @@ function proxylist() {
   win.document.body.appendChild(iframe);
 }
 
-window.addEventListener("DOMContentLoaded", function () {
-  // Generate a random number between 0 and 99
-  let randomNumber = Math.floor(Math.random() * 100);
+// Generate a random number between 0 and 100
+var minnumber = 0;
+var maxnumber = 100;
+var randomNumber = Math.floor(Math.random() * (maxnumber + 1) + minnumber);
 
-  // Check if the random number equal to 43
-  if (randomNumber == "43") {
-    var poop = document.getElementById("traf-say");
-    poop.style.display = "block";
-  }
-});
+// Check if the random number equal to 43
+if (randomNumber == "43") {
+  //connect a var to the div//
+  var poop = document.getElementById("traf-say");
+  //use that var to remove the div//
+  poop.style.display = "block";
+}
