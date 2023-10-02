@@ -9,4 +9,4 @@ ________________________________________________________________________________
 
 ## Azure
 
-this is Aluben on Azure WIP.
+this is Aluben on Azure.
