@@ -21,7 +21,7 @@ head {
 }
 
 button {
-  background-color: #001141;
+  background-color: #010717;
   color: floralwhite;
   border: 2px solid orange;
   border-radius: 5px;
@@ -33,7 +33,7 @@ button:hover {
   transition: 1000ms;
   padding: 10px 50px;
   transform: translateY(-0px);
-  background-color: #001141;
+  background-color: #010717;
   color: floralwhite;
   border: solid 4px orange;
 }
