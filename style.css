@@ -103,7 +103,7 @@ select {
   color: red;
   text-decoration: none;
 }
-.sidebar {
+.header {
   color: rgb(255, 255, 255);
   background-color: rgb(36, 36, 36);
   text-align: center;
@@ -119,11 +119,7 @@ select {
   left: 0%;
   position: fixed;
   width: 100%;
-  top: 40px;
-}
-#remove {
-  position: absolute;
-  right: 140px;
+  top: 45px;
 }
 .subtitle {
   font-size: 29px;
@@ -142,7 +138,7 @@ select {
 #closesetbutton:hover {
   background-color: #3d3d3d;
   text-align: center;
-  border: 0px solid #3d3d3d;
+  border: 0px solid;
   padding: 10px 20px;
 }
 #colorwheel {
