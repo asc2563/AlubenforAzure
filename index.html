@@ -86,9 +86,9 @@
     <button onclick="twi()">twilight</button>
     <button onclick="rand()">Hephaestus</button>
     <button onclick="sun()">sunlight</button>
-    <button onclick="customtheme()">custom</button>
+    <button onclick="customtheme()">custom (once per refresh)</button>
     <iframe id = "colorwheel" src="https://www.canva.com/colors/color-wheel/"></iframe>
-    <h2>tab cloak(click a few times)</h2>
+    <h2>tab cloak (click a few times)</h2>
     <script>
       var tabrename;
       var tabrenamechange;
@@ -99,7 +99,11 @@
         var textcolor = prompt('type hex value for text color');
         document.body.style.backgroundColor = backcolor;
         document.body.style.color = textcolor;
+        var buttonElements = document.getElementsByTagName("button");
+        for (let i = 0; i < buttonElements.length; i++) {
+        buttonElements[i].style.color = textcolor;
       }
+    }
     </script>
     <button onclick="clevercloak()">clever</button>
     <button onclick="googleclassroomcloak()">google classroom</button>
