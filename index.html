@@ -58,6 +58,19 @@
         </script>
       </div>
   <script>
+  function fert() {
+      
+        var color = "#005e12";
+        var backcolor = "#673b00";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
+    }
     function back() {
   
       var color = "#ffffff";
@@ -163,6 +176,7 @@
     <button onclick="twi()">twilight</button>
     <button onclick="rand()">Hephaestus</button>
     <button onclick="sun()">sunlight</button>
+    <button onclick="fert()">fertlizer</button>
     <button onclick="customtheme()">custom</button>
     </div><br><br>
     <div id="minidiv">
@@ -276,6 +290,15 @@ setInterval(gcloak, 1000);
     </script>
   </div>
   <div id="traf-say"><a href="./Fart.html"><span class="stinky">traf</span></a></div>
+  <script>
+  function stuff() {
+      $("#myCustomAlert").hide();
+      $("#show").show();
+      $("#show1").show();
+      passcode = passcodechangestuff
+          console.log('you passcode is '' + passcode + ');
+          }
+    </script>
   <style>
     /* Define styles for the custom alert */
     .custom-alert {
@@ -294,30 +317,26 @@ setInterval(gcloak, 1000);
   </style>
   <script>
     var passcode;
+    var passcodechangestuff;
   </script>
 
   <!-- Custom alert with ID and class -->
   <div id="myCustomAlert" class="custom-alert">
     Welcome to Aluben, Set Passcode<br />
 
-    <input type="text" id="hi" onchange="passcode = this.value; console.log(''+ passcode +'')"></input>
-    <button onclick="hideCustomAlert()">Comfirm</button>
+    <input type="text" id="hi" onchange="passcodechangestuff = this.value"></input>
+    <button onclick="stuff()">Comfirm</button>
   </div>
   <script>
     function showCustomAlert() {
       $("#myCustomAlert").show();
-    }
-
-    function hideCustomAlert() {
-      $("#myCustomAlert").hide();
-      $("#show").show();
-      $("#show1").show();
     }
     function passcodechange() {
       var oldpasscode = prompt("enter old passcode");
       if (oldpasscode == passcode) {
         var newpasscode = prompt('enter new passcode');
         passcode = newpasscode;
+        console.log('you passcode is '' + passcode + ');
       } else {
           alert('incorrect passocde')
         }
