@@ -295,8 +295,6 @@ setInterval(gcloak, 1000);
       $("#myCustomAlert").hide();
       $("#show").show();
       $("#show1").show();
-      passcode = passcodechangestuff
-          console.log('you passcode is '' + passcode + ');
           }
     </script>
   <style>
@@ -317,14 +315,13 @@ setInterval(gcloak, 1000);
   </style>
   <script>
     var passcode;
-    var passcodechangestuff;
   </script>
 
   <!-- Custom alert with ID and class -->
   <div id="myCustomAlert" class="custom-alert">
     Welcome to Aluben, Set Passcode<br />
 
-    <input type="text" id="hi" onchange="passcodechangestuff = this.value"></input>
+    <input type="text" id="hi" onchange="passcode = this.value; console.log(passcode)"></input>
     <button onclick="stuff()">Comfirm</button>
   </div>
   <script>
@@ -336,7 +333,6 @@ setInterval(gcloak, 1000);
       if (oldpasscode == passcode) {
         var newpasscode = prompt('enter new passcode');
         passcode = newpasscode;
-        console.log('you passcode is '' + passcode + ');
       } else {
           alert('incorrect passocde')
         }
