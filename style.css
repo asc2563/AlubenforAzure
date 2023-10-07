@@ -169,3 +169,11 @@ select {
   top: 7px;
   background-color: #3d3d3d;
 }
+#minidiv {
+  background-color: #333333;
+  border-radius: 50px;
+  width: 600px;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+}

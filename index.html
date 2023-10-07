@@ -15,7 +15,7 @@
       color: white;
     }
   </style>
-  <b><a id="Aluben" href="#"><img src="./assets/images/logo.jpeg" /></a></b>
+  <b><a id="Aluben" href="#"><img src="./assets/images/backlogo.png" /></a></b>
   <br />
   <br />
 </head>
@@ -23,13 +23,22 @@
 
 
 <body style="background-color: black">
+  <script>
+    var button = document.getElementsByTagName("button");
+  </script>
       <div class="header">
         <!--header contents-->
-        <button onclick="passcodechange()">change passcode
-        </button>  
+          <button onclick="passcodechange()">change passcode
+  </button> 
+          <button class="button" type="button" onclick="calculator()">Calculator
+  </button>  
           <button class="button" type="button" onclick="Byblk()">luanch Byeblocker
   </button><button class="button" type="button" onclick="credits()">Credits
-  </button><button class="button" type="button" onclick="proxylist()">
+  </button>
+          <button class="button" type="button" onclick="games()">
+    Iceland games
+  </button>
+        <button class="button" type="button" onclick="proxylist()">
     Procky list
   </button>
         <button id="show1" type="button" onclick="pass2()">
@@ -38,12 +47,11 @@
    <button id="show" type="button" onclick="pass1()">
     Aluben tab options 1
   </button>
-  <button class="button" type="button" onclick="games()">
-    Iceland games
-  </button>
+        
         <button id = "cust1" type="button" onclick="cust()">
           <img id = "settingsimg" src="./assets/images/settings.png"/> 
         </button>
+        
         <script>
           $("#show").hide();
           $("#show1").hide();
@@ -51,39 +59,103 @@
       </div>
   <script>
     function back() {
-  document.body.style.backgroundColor = "#000000"
-  document.body.style.color = "#ffffff";
-    }
+  
+      var color = "#ffffff";
+        var backcolor = "#000000";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        document.button.style.backgroundColor = backcolor;
+        document.button.style.color = color;
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
+        button.style.backgroundColor = "#ffffff";
+        button.style.color =  "#000000";
+};
+    
     function white() {
-      document.body.style.backgroundColor = "#ffffff"
-  document.body.style.color = "#000000";
+      
+      var color = "#000000";
+        var backcolor = "#ffffff";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
+        
+        button.style.backgroundColor = "#ffffff";
+        button.style.color =  "#000000";
     }
   </script>
   <div id = "cust">
     <div id = "closeset">
-      <button id = "closesetbutton" onclick="remove()"><strong>x</strong></button>
+      <button id = "closesetbutton" onclick="remove()"><strong>X</strong></button>
     </div>
     <script>
       function remove() {
         $("#cust").hide();
       }
       function blue() {
-        document.body.style.backgroundColor = "#00008B";
-  document.body.style.color = "#00ffff";
+        
+        var color = "#00ffff";
+        var backcolor = "#00008B";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
       }
       function twi() {
-       document.body.style.backgroundColor = "#26233a";
-        document.body.style.color = "#ffffff";
+       
+        var color = "#ffffff";
+        var backcolor = "#26233a";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
       }
       function rand() {
-        document.body.style.backgroundColor = "#df990d";
-        document.body.style.color = "#ffd6d9";
+        var color = "#ffd6d9";
+        var backcolor = "#df990d";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
       }
       function sun() {
-        document.body.style.backgroundColor = "#e8e700";
-        document.body.style.color = "#e41b1c";
+        
+        var color = "#e41b1c";
+        var backcolor = "#e8e700";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
       }
-    </script>
+    </script><br><br>
+    <div id="minidiv">
+    
     <h1>themes:</h1>
     <button onclick="back()">dark</button>
     <button onclick="white()">white</button>
@@ -91,9 +163,10 @@
     <button onclick="twi()">twilight</button>
     <button onclick="rand()">Hephaestus</button>
     <button onclick="sun()">sunlight</button>
-    <button onclick="customtheme()">custom (once per refresh)</button>
-    <iframe id = "colorwheel" src="https://www.canva.com/colors/color-wheel/"></iframe>
-    <h2>tab cloak (click a few times)</h2>
+    <button onclick="customtheme()">custom</button>
+    </div><br><br>
+    <div id="minidiv">
+    <h1>tab cloak(click a few times)</h1>
     <script>
       var tabrename;
       var tabrenamechange;
@@ -104,23 +177,28 @@
         var textcolor = prompt('type hex value for text color');
         document.body.style.backgroundColor = backcolor;
         document.body.style.color = textcolor;
-        var buttonElements = document.getElementsByTagName("button");
-        for (let i = 0; i < buttonElements.length; i++) {
-        buttonElements[i].style.color = textcolor;
+        
+        // Change background color to white
+        button.style.backgroundColor = backcolor;
+        // Change text color to black
+        button.style.color = textcolor;
       }
-    }
     </script>
     <button onclick="clevercloak()">clever</button>
     <button onclick="googleclassroomcloak()">google classroom</button>
     <br>
-    <span class = "subtitle">custom tab cloak</span>
+  
+    <span class = "subtitle">custom tab cloak:</span>
     <br>
     <input type="text" onchange="tabrename = this.value;" placeholder="enter new tab name">
-    <button onclick="nowstrt()">set</button>
+    <button onclick="nowstrt()">set</button><br><br></div>
     <br><br>
-    <h3>About:blank no history cloak</h3>
+    <div id="minidiv">
+    <h1>About:blank no history cloak</h1>
     <button onclick="aboutblank()">about:blank cloak Aluben</button>
     <button onclick="aboutblank2()">about:blank cloak other websites</button>
+    </div>
+    
     <script>
       function aboutblank() {
         win = window.open();
@@ -222,7 +300,7 @@ setInterval(gcloak, 1000);
   <div id="myCustomAlert" class="custom-alert">
     Welcome to Aluben, Set Passcode<br />
 
-    <input placeholder="Enter your password" type="text" id="hi" onchange="passcode = this.value; console.log('you passcode is '+ passcode +'')"></input>
+    <input type="text" id="hi" onchange="passcode = this.value; console.log(''+ passcode +'')"></input>
     <button onclick="hideCustomAlert()">Comfirm</button>
   </div>
   <script>
@@ -240,15 +318,14 @@ setInterval(gcloak, 1000);
       if (oldpasscode == passcode) {
         var newpasscode = prompt('enter new passcode');
         passcode = newpasscode;
-        console.log('your password is '+ passcode +'')
       } else {
           alert('incorrect passocde')
         }
       }
   </script>
   <br />
-  <button class="button" type="button" onclick="calculator()">Calculator
-  </button>  
+ 
+
   <button class="button" type="button" onclick="pass2()">
     Aluben tab options 2
   </button>
@@ -291,8 +368,8 @@ setInterval(gcloak, 1000);
     </script>
 
   </body>
-  <div id="r4-widget-form"></div>
-  <p>Rammerhead</p>
+  <div ></div>
+  <br><br>Rammerhead<br><br>
   <select id="rammy">
     <option value="">Select a link...</option>
     <option value="https://education.mordeco.com/">Rammerhead</option>
@@ -885,7 +962,7 @@ setInterval(gcloak, 1000);
       }
     }
   </script>
-  <p>Holy Unblocker</p>
+  <br><br>Holy Unblocker<br><br> 
   <select id="holyub">
     <option value="">Select a Link...</option>
     <option value="https://www.holyubofficial.net/">Holy Unblocker</option>
