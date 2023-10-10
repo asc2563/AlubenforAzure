@@ -25,6 +25,7 @@
 <body style="background-color: black">
   <script>
     var button = document.getElementsByTagName("button");
+    var url = 'https://google.com';
   </script>
       <div class="header">
         <!--header contents-->
@@ -41,6 +42,7 @@
         <button class="button" type="button" onclick="proxylist()">
     Procky list
   </button>
+        <button class="button" type="button" onclick="panic()"><span style="background-color: darkred">panic button click when teacher is close(keybind: `)</span></button>
         <button id="show1" type="button" onclick="pass2()">
     Aluben tab options 2
   </button>
@@ -60,22 +62,18 @@
   <script>
     function back() {
   
-      var color = "#ffffff";
+        var color = "#ffffff";
         var backcolor = "#000000";
         document.body.style.backgroundColor = backcolor;
         document.body.style.color = color;
-        document.button.style.backgroundColor = backcolor;
-        document.button.style.color = color;
         var rammy = document.getElementById("rammy");
         rammy.style.color = color;
         rammy.style.backgroundColor = backcolor;
         var holy = document.getElementById("holyub");
         holy.style.backgroundColor = backcolor;
         holy.style.color = color;
-        button.style.backgroundColor = "#ffffff";
-        button.style.color =  "#000000";
+        
 };
-    
     function white() {
       
       var color = "#000000";
@@ -88,9 +86,6 @@
         var holy = document.getElementById("holyub");
         holy.style.backgroundColor = backcolor;
         holy.style.color = color;
-        
-        button.style.backgroundColor = "#ffffff";
-        button.style.color =  "#000000";
     }
   </script>
   <div id = "cust">
@@ -153,12 +148,25 @@
         holy.style.backgroundColor = backcolor;
         holy.style.color = color;
       }
+      function fert() {
+      
+        var color = "#005e12";
+        var backcolor = "#673b00";
+        document.body.style.backgroundColor = backcolor;
+        document.body.style.color = color;
+        var rammy = document.getElementById("rammy");
+        rammy.style.color = color;
+        rammy.style.backgroundColor = backcolor;
+        var holy = document.getElementById("holyub");
+        holy.style.backgroundColor = backcolor;
+        holy.style.color = color;
+    }
     </script><br><br>
     <div id="minidiv">
     
     <h1>themes:</h1>
-    <button onclick="back()">dark</button>
-    <button onclick="white()">white</button>
+    <button onclick="back(back)">dark</button>
+    <button onclick="white(white)">white</button>
     <button onclick="blue()">ocean</button>
     <button onclick="twi()">twilight</button>
     <button onclick="rand()">Hephaestus</button>
@@ -198,7 +206,11 @@
     <button onclick="aboutblank()">about:blank cloak Aluben</button>
     <button onclick="aboutblank2()">about:blank cloak other websites</button>
     </div>
-    
+    <div id = "minidiv">
+      <h1>set website for panic button</h1>
+      <p class="subtitle">be sure to add https:// at the beginning of the url</p>
+      <input onchange='url = this.value;' placeholder="eg, https://example.com">
+    </div>
     <script>
       function aboutblank() {
         win = window.open();
@@ -277,6 +289,7 @@ setInterval(gcloak, 1000);
   </div>
   <div id="traf-say"><a href="./Fart.html"><span class="stinky">traf</span></a></div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   <script>
   function stuff() {
@@ -286,6 +299,8 @@ setInterval(gcloak, 1000);
           }
     </script>
 >>>>>>> a43021e (ah man)
+=======
+>>>>>>> 7dc0368 (Update index.html)
   <style>
     /* Define styles for the custom alert */
     .custom-alert {
@@ -311,12 +326,17 @@ setInterval(gcloak, 1000);
     Welcome to Aluben, Set Passcode<br />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <input type="text" id="hi" onchange="passcode = this.value; console.log(''+ passcode +'')"></input>
     <button onclick="hideCustomAlert()">Comfirm</button>
 =======
     <input type="text" id="hi" onchange="passcode = this.value; console.log(passcode)"></input>
     <button onclick="stuff()">Comfirm</button>
 >>>>>>> a43021e (ah man)
+=======
+    <input type="text" id="hi" onchange="passcode = this.value; console.log(''+ passcode +'')"></input>
+    <button onclick="hideCustomAlert()">Comfirm</button>
+>>>>>>> 7dc0368 (Update index.html)
   </div>
   <script>
     function showCustomAlert() {
